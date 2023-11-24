@@ -7,8 +7,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MainController {
     @GetMapping("/hi")
-    @ResponseBody
     public String hi () {
         return "hi";
+    }
+
+    @GetMapping("/")
+    public String root () {
+        return "article_list";
     }
 }
